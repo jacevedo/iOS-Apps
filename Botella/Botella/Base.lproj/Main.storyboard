@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3zU-7K-dUN"/>
+                        <viewControllerLayoutGuide type="bottom" id="hzH-k3-TUW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="vista" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-lV-RMJ">
+                                <rect key="frame" x="179" y="240" width="90" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="jugarBotella.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wWH-AB-k9k" kind="modal" id="10V-Az-qFN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="69" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe2-eq-8le">
+                                <rect key="frame" x="46" y="240" width="90" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="c72-Op-7Ev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="seleccionarBotella.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Y6P-cC-z8z" kind="modal" id="ItZ-fY-RIo"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBd-ab-ggK">
+                                <rect key="frame" x="0.0" y="16" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Juego de la Botella" id="sri-Mz-VIf"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GBd-ab-ggK" secondAttribute="trailing" id="ChU-fv-0v7"/>
+                            <constraint firstItem="Fe2-eq-8le" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="46" id="D8K-RC-ZcX"/>
+                            <constraint firstAttribute="trailing" secondItem="rKK-lV-RMJ" secondAttribute="trailing" constant="51" id="GS9-Vw-2Ky"/>
+                            <constraint firstItem="rKK-lV-RMJ" firstAttribute="leading" secondItem="Fe2-eq-8le" secondAttribute="trailing" constant="43" id="JgX-aT-Imj"/>
+                            <constraint firstItem="Fe2-eq-8le" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Pcx-Ew-h7f"/>
+                            <constraint firstItem="Fe2-eq-8le" firstAttribute="bottom" secondItem="rKK-lV-RMJ" secondAttribute="bottom" id="Vo4-dB-ZU8"/>
+                            <constraint firstItem="GBd-ab-ggK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="16" id="dHW-Yu-XXH"/>
+                            <constraint firstItem="hzH-k3-TUW" firstAttribute="top" secondItem="Fe2-eq-8le" secondAttribute="bottom" constant="240" id="eoQ-pr-d4w"/>
+                            <constraint firstItem="GBd-ab-ggK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="htt-R3-PCu"/>
+                            <constraint firstItem="Fe2-eq-8le" firstAttribute="top" secondItem="rKK-lV-RMJ" secondAttribute="top" id="xqz-1x-QwK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="28"/>
+        </scene>
+        <!--Seleccion Botella-->
+        <scene sceneID="xtl-gM-ty2">
+            <objects>
+                <viewController id="Y6P-cC-z8z" customClass="SeleccionBotella" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xoa-sY-qce"/>
+                        <viewControllerLayoutGuide type="bottom" id="7wU-1f-aZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mVE-KV-hd6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ScL-ls-57c">
+                                <rect key="frame" x="0.0" y="17" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Seleccione Botella" id="7WS-zo-MPH">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="KvN-rb-3wK">
+                                            <connections>
+                                                <action selector="Volver:" destination="Y6P-cC-z8z" id="puO-2p-fph"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DgY-z7-hdP">
+                                <rect key="frame" x="0.0" y="61" width="320" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjl-Fs-vdh">
+                                        <rect key="frame" x="20" y="150" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="4.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella4:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="2zh-yN-wUt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5A-bQ-pju">
+                                        <rect key="frame" x="20" y="20" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="1.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella1:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="Z2P-i2-f22"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjC-BR-2qO">
+                                        <rect key="frame" x="136" y="20" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="2.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella2:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="fOB-1W-grP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7j-gR-hKO">
+                                        <rect key="frame" x="242" y="20" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="3.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella3:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="kaB-iG-ybR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go2-b3-SeN">
+                                        <rect key="frame" x="242" y="299" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="botella.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella9:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="ADd-ON-zwh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-1r-dxy">
+                                        <rect key="frame" x="136" y="150" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="5.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella5:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="lSN-dT-ngS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPE-4n-Xbu">
+                                        <rect key="frame" x="242" y="150" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="6.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella6:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="kF1-kD-IHd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2b-xV-BMs">
+                                        <rect key="frame" x="136" y="299" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="8.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella8:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="v1u-UD-Fnm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8J4-zK-jbK">
+                                        <rect key="frame" x="20" y="299" width="64" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="7.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Botella7:" destination="Y6P-cC-z8z" eventType="touchUpInside" id="fKo-0S-okf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7wU-1f-aZb" firstAttribute="top" secondItem="DgY-z7-hdP" secondAttribute="bottom" id="eXW-7l-obl"/>
+                            <constraint firstItem="DgY-z7-hdP" firstAttribute="top" secondItem="ScL-ls-57c" secondAttribute="bottom" id="u2O-L5-god"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="View" destination="DgY-z7-hdP" id="gZp-Qs-yuI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsM-ff-LTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="661"/>
+        </scene>
+        <!--Juego-->
+        <scene sceneID="WAh-KH-RAZ">
+            <objects>
+                <viewController id="wWH-AB-k9k" customClass="Juego" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="78f-02-wF6"/>
+                        <viewControllerLayoutGuide type="bottom" id="NEI-LT-w7X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jbi-1i-mc6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCD-U3-5LB">
+                                <rect key="frame" x="0.0" y="16" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NBP-Mz-Aof"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Toca la Botella" id="znw-gh-rzM">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="V78-nb-C77">
+                                            <connections>
+                                                <action selector="Volver:" destination="wWH-AB-k9k" id="vcu-jS-gcb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z37-CQ-p0p">
+                                <rect key="frame" x="106" y="138" width="109" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="pGB-GF-jfO"/>
+                                </constraints>
+                                <state key="normal" image="1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnJuego:" destination="wWH-AB-k9k" eventType="touchUpInside" id="G8z-bo-XcV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z37-CQ-p0p" firstAttribute="top" secondItem="fCD-U3-5LB" secondAttribute="bottom" constant="78" id="8vE-Az-uFw"/>
+                            <constraint firstItem="NEI-LT-w7X" firstAttribute="top" secondItem="Z37-CQ-p0p" secondAttribute="bottom" constant="139" id="9U4-vL-Lzy"/>
+                            <constraint firstItem="fCD-U3-5LB" firstAttribute="top" secondItem="Jbi-1i-mc6" secondAttribute="top" constant="16" id="fRR-lN-R8L"/>
+                            <constraint firstItem="fCD-U3-5LB" firstAttribute="leading" secondItem="Jbi-1i-mc6" secondAttribute="leading" id="hsT-pL-crB"/>
+                            <constraint firstAttribute="trailing" secondItem="fCD-U3-5LB" secondAttribute="trailing" id="nCM-p0-fvW"/>
+                            <constraint firstItem="fCD-U3-5LB" firstAttribute="centerX" secondItem="Z37-CQ-p0p" secondAttribute="centerX" id="yUG-FS-BYK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botella" destination="Z37-CQ-p0p" id="qJs-fP-u4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luv-YF-meH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="421" height="1310"/>
+        <image name="2.png" width="520" height="1000"/>
+        <image name="3.png" width="172" height="653"/>
+        <image name="4.png" width="86" height="355"/>
+        <image name="5.png" width="138" height="350"/>
+        <image name="6.png" width="290" height="538"/>
+        <image name="7.png" width="220" height="541"/>
+        <image name="8.png" width="101" height="338"/>
+        <image name="botella.png" width="59" height="240"/>
+        <image name="jugarBotella.jpg" width="256" height="256"/>
+        <image name="seleccionarBotella.jpg" width="256" height="256"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
